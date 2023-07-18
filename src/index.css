@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #18d26e;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.aboutbox{
+  border: 2px solid black;
+  margin: 4px
+}
+/* -------------------Stories----------------------- */
+/* .bodyStory{
+  border: 2px solid black;
+} */
+
+
+/* ---------------Contact Us------------------------------- */
+.contactus-section {
+  margin: 15rem 0;
+}
+
+
+/* .contact-leftside{
+  margin: auto;
+} */
+.contact-leftside img {
+  min-width: 80%;
+  max-height: 20rem;
+  height: auto;
+  margin: auto;
+}
+
+.contact-input-feild {
+  margin-bottom: 2rem;
+}
+
+/* .contact-rightside{
+  margin: 1px;
+} */
+
+.contact-rightside form .form-control {
+  border: 1px solid #ced4da;
+  /* -webkit-appearance: none; */
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+
+.contact-rightside form .form-check-input {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+.form-checkbox-style {
+  margin: 4rem 0;
+}
+
+/* .contact-rightside form .main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 75%;
+  padding: 0 2rem; 
+} */
+
+
+/* -----------------Footer----------------------- */
