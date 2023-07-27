@@ -1,0 +1,54 @@
+
+
+.myForm {
+    max-width: 400px;
+    margin-top: 2 rem;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #efeded;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(211, 190, 190, 0.1);
+    background-color: #f5f4f4;
+    
+  }
+  .outerForm
+  {
+    
+    margin: 2rem;
+    box-shadow: 10px 10px 10px rgb(253, 253, 253);
+    padding: 20px;
+  }
+  .btnFormSub:hover{
+    background-color: rgb(137, 71, 223);
+    color: black;
+  }
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+ 
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btnForSub {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnFormSub:hover {
+    background-color: #da3ef9;
+    color: white;
+  }
+  

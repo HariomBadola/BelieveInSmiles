@@ -1,0 +1,48 @@
+/* Styles for the card container */
+.card-container{
+
+  border-radius: 2rem;
+  box-shadow: 0px 10px 8px #999;
+  background-color: white;
+  height: fit-content;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0px;
+  border: 0px;
+  margin: 2px 5px 10px 5px;
+}
+
+.Container {
+  display: flex;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 2rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  border-width: 0;
+}
+
+
+@media screen and (min-width: 992px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card-text{
+  text-align: center;
+}

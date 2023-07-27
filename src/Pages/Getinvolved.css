@@ -1,0 +1,33 @@
+.btn{
+    background-color: rgb(13, 169, 13);
+    color: white;
+
+}
+.main-heading{
+    text-align: center;
+    margin: 0%;
+    
+}
+.figure{
+    justify-content: center;
+}
+.row{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-fluid{
+    display: block;
+    
+    padding: 0px;
+    
+}
+.m-xl-auto{
+    margin: 0%;
+}
+.contact-leftside img
+{
+    margin: 0%;
+    height: auto;
+    width: 100%;
+
+}

@@ -1,0 +1,83 @@
+
+.nav-link:hover{
+    background-color: #5d34ce;
+    border-radius: 0.5rem;
+    color: rgb(251, 250, 252);
+    
+}
+.nav-link
+{
+    color: black;
+}
+
+.navbar{
+    margin: 0;
+    padding: 1% 2% 1% 2%;
+      border-radius: 0.3rem;
+      height: auto;
+      background-color: #f8f8fa;
+      box-shadow: 2px 6px 10px #ac88ae ;
+}
+.outer
+{
+    margin: auto;
+    padding: 0%;
+    box-shadow: 0 4px 10px rgb(204, 201, 204) ;
+}
+.nav-item{
+    margin:1rem;
+   
+}
+
+.collapse{
+    border-radius: 0.3rem;
+    margin: 0;
+    padding: 0%;
+}
+.container{
+    box-shadow: 0 4PX 4px rgb(238, 235, 235);
+    
+    
+    margin: auto;
+    align-items: center;
+    padding: auto;
+    
+
+    
+ 
+}
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+#donate{
+    
+    background-color: rgb(198, 19, 226);
+    border-radius: 0.7rem;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 6px rgb(93, 57, 105);
+    
+}
+#donate:hover{
+    background-color: rgb(8, 200, 30);
+}
+.navbar-brand{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #d61adc;
+    color: white;
+    padding: 4px;
+    border-radius: 0.2rem;
+    box-shadow: 2px 4px 4px rgb(143, 89, 140);
+    align-items: center;
+    align-self: center;
+    
+}
+@font-face {
+    font-family: "Bungee";
+    src: url('../Fonts/BungeeShade-Regular.ttf') format('ttf');
+    
+         
+}

@@ -1,0 +1,170 @@
+/* FlippyCard.css */
+
+.outer{
+  padding: 10px;
+  border: 1px rgb(97, 13, 200) ;
+ 
+  }
+
+.flippy-card {
+  width: 60vh;
+  height: 40vh;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.heading1{
+  color: #fefefe;
+  text-align: center;
+  margin: auto;
+ padding: 0%;
+ width: auto;
+ font-stretch: condensed;
+ background-color: rgb(61, 60, 60);
+ box-shadow: 0 4px 8px #8f6deb;
+ border-radius: 0.5rem;
+ margin-bottom: 5px;
+
+}
+
+.flippy-card > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+
+  align-items: center;
+  border: 1px solid #5d34ce;
+  box-shadow: 0 4px 8px rgba(154, 18, 200, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.front {
+  background-color: #5d34ce;
+  z-index: 2;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.imgbox{
+margin: auto;
+}
+
+.back {
+  background-color: #fefefe;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+  z-index: 1;
+  
+}
+.text-content{
+  text-align: center;
+  font-size:10px;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  height: auto;
+  width: 100%;
+}
+.para{
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  border-color: #fefefe;
+  width: 10vh;
+  height: 5%;
+  height:auto;
+  margin: auto;
+  padding: 0%;
+  
+}
+.imgcard{
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+
+}
+.imgbox{
+  width: auto;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0%;
+}
+.toggleclick
+{
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding:5px;
+  border-radius: 0.3rem;
+  width: auto;
+  height: 2rem;
+  
+
+}
+.para:hover{
+  background-color: aquamarine;
+}
+h3{
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
+.heading{
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.flipped .front {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+.flipped .back {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .flippy-card {
+    width: 100%;
+    height: 150px;
+  }
+
+  
+
+  
+  .back {
+    flex-direction: column; /* Stack the content vertically on smaller screens */
+    align-items: center;
+          background-color: #fefefe;
+      transform: rotateY(180deg);
+      transition: transform 0.5s;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Center the text on the back side */
+    
+  }
+
+
+  
+
+ 
+}
+
+

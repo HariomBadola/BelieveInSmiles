@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import './Getinvolved.css'
 
-const Contact = () => {
+const Getinvolved = () => {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -14,19 +17,17 @@ const Contact = () => {
   const postUserData = (event) => {
     name = event.target.name;
     value = event.target.value;
-
     setUserData({ ...userData, [name]: value });
   };
 
-  // connect with firebase
+  
   const submitData = async (event) => {
     event.preventDefault();
     const { firstName, lastName, phone, email, address, message } = userData;
 
     if (firstName && lastName && phone && email && address && message) {
-      const res = fetch(
-        "https://firstreact-322c4-default-rtdb.firebaseio.com/userDataRecords.json",
-        {
+      try {
+        const response = await fetch('/form', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -39,32 +40,41 @@ const Contact = () => {
             address,
             message,
           }),
-        }
-      );
-
-      if (res) {
-        setUserData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          address: "",
-          message: "",
         });
-        alert("Data Stored");
-      } else {
-        alert("plz fill the data");
+
+        if (response.status === 200) {
+          setUserData({
+            firstName: "",
+            lastName: "",
+            phone: "",
+            email: "",
+            address: "",
+            message: "",
+          });
+          alert("Thank you.");
+        } else {
+          alert("Failed to save data. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error saving data:", error);
+        alert("Failed to save data. Please try again.");
       }
     } else {
-      alert("plz fill the data");
+      alert("Please fill all the fields.");
     }
   };
 
+
+
+
   return (
     <>
-      <section className="contactus-section mt-5">
-        <div className="container">
-          <div className="row">
+    <Navbar/>
+      <section  >
+        
+       
+        <div className="outerForm">
+          <div className="row ">
             <div className="col-12 col-lg-10 mx-md-auto">
               <div className="row">
                 <div className="contact-leftside col-12 col-lg-5">
@@ -184,9 +194,12 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
+        
       </section>
+      <Footer/>
     </>
   );
 };
 
-export default Contact;
+export default Getinvolved;
