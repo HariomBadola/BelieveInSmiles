@@ -37,3 +37,17 @@
     align-items: center;
   }
 }
+.btn{
+  box-shadow: 3px 3px 2px rgb(215, 215, 215);
+  color: green;
+  border-radius: 4px;
+  transition : transform 0.2s, box-shadow .2s;
+}
+.btn:active{
+  color: rgb(78, 224, 78) rgb(148, 146, 146);
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 0px 0px 0px  ;
+}
+.btn:hover{
+  backgroundcolor:rgb(137, 235, 137)
+}

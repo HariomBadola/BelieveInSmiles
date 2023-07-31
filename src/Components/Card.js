@@ -21,7 +21,7 @@ const Card = ({ imgSrc, imgAlt, title, description, buttonText, link }) => {
           <div class="card-body" style={{ textAlign: "center" }}>
             <h5 class="card-title">{title}</h5>
             <p class="card-text">{description}</p>
-            <a href={link} class="btn btn-success" >{buttonText}</a>
+            <button href={link} class="btn btn-success" >{buttonText}</button>
           </div>
         </div>
       </motion.div>
